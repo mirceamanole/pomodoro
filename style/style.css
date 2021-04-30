@@ -1,0 +1,78 @@
+html{
+    background-image: url('../images/clepsidra.jpeg');
+    background-size: cover;
+} 
+
+body{
+    font-family: 'New Tegomin', serif;
+    margin: 0;
+    height: 100vh;
+    background-repeat: no-repeat;
+    font-weight: bolder;
+    font-size: larger;
+    background-image: url('../images/clepsidra.jpeg');
+    background-position: center;
+}
+ 
+
+.container{
+    max-width: 600px;
+    margin: auto;
+    height: 200px;
+    width: 700px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.timer{
+    display: flex;
+}
+
+.button{
+    font-family: 'New Tegomin', serif;
+    font-weight: bolder;
+    font-size: larger;
+    background-color: white;
+}
+
+form{
+    margin: 50px auto;
+    width: 600px;
+    border-radius: 10px;
+}
+
+.inputs{
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-around;
+}
+
+input[type="number"]{
+    width: 20%;
+} 
+
+.input-button{
+    text-align: center;
+    padding: 25px 0;
+    font-family: 'New Tegomin', serif;
+}
+#butt{
+    font-family: 'New Tegomin', serif;
+    font-weight: bolder;
+    font-size: larger;
+background-color: white;
+}
+
+@media (max-width :600px){
+    html{
+        background-image:unset
+    }
+    .container{
+        max-width: 325px; 
+    }
+    form{
+        max-width: 325px;
+    }
+
+}

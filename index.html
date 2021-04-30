@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRONOS IS HERE</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1 style="text-align: center;">Pomodoro Clock </h1>
+    <form>
+        <div class="inputs">
+            <input type="number" min="0" placeholder="Min per exercise">
+            <input type="number" min="0" placeholder="Sec pe exercise">
+            <input type="number" min="0" placeholder="Min pe break">
+            <input type="number" min="0" placeholder="Sec pe break">
+        </div>
+        <div class='input-button'>
+            <button id="butt" type="submit">Are you sure?</button>
+        </div>
+    </form>
+    <div class="container">
+        <!-- Labelurile -->
+        <p id="work" class="label">Work</p>
+        <p id="break" class="label">Break</p>
+        <p id="cycles" class="label">Cycles</p>
+
+        <!-- Timerul de muncit -->
+        <div id="work-time" class="timer">
+            <p id="w-minutes">00</p>
+            <p id="semicolon">:</p>
+            <p id="w-seconds">00</p>
+        </div>
+
+        <!-- Counterul de pauza -->
+        <div id="break-time" class="timer">
+            <p id="b-minutes">00</p>
+            <p id="semicolon">:</p>
+            <p id="b-seconds">00</p>
+        </div>
+        <!-- Counterul munca+pauza -->
+        <p id="counter" class="timer">0</p>
+
+
+        <!-- Butoanele -->
+
+        <button id="start" class="button">Start</button>
+        <button id="pause" class="button">Pause</button>
+        <button id="reset" class="button">Reset</button>
+
+    </div>
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
